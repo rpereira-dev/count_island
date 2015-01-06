@@ -14,7 +14,8 @@
 
 static int	get_map_size(char *file)
 {
-	int		fd;
+	return (1024 * 1024 + 1);
+/*	int		fd;
 	int		size;
 	int		ret;
 	char	buffer[8192];
@@ -28,7 +29,7 @@ static int	get_map_size(char *file)
 	if (ret == -1)
 		return (0);
 	close(fd);
-	return (size);
+	return (size);*/
 }
 
 static void	do_island(char *map, int rank, int largeur, int nb)
